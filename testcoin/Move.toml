@@ -1,0 +1,11 @@
+[package]
+name = 'ex-testcoin'
+version = '1.0.0'
+
+[addresses]
+testcoin = "ce83e85e96fae68815abbf35be18d6d4dda6884f65fb08e99de0d35a0df1a205"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
