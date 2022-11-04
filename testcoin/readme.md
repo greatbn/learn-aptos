@@ -143,3 +143,26 @@ yes
   }
 }
 ```
+
+**Burn TESTCOIN**
+
+Use `burn.move` script
+
+```sh
+saphamdang@Sas-MacBook-Pro testcoin % aptos move run-script --compiled-script-path build/ex-testcoin/bytecode_scripts/burn.mv --args u64:100
+Do you want to submit a transaction for a range of [53300 - 79900] Octas at a gas unit price of 100 Octas? [yes/no] >
+yes
+{
+  "Result": {
+    "transaction_hash": "0x3e69d78ecda854f39d063f7af1aae47a89f0e9812b895ea9db167c54a09dbc0d",
+    "gas_used": 533,
+    "gas_unit_price": 100,
+    "sender": "ce83e85e96fae68815abbf35be18d6d4dda6884f65fb08e99de0d35a0df1a205",
+    "sequence_number": 9,
+    "success": true,
+    "timestamp_us": 1667572744086531,
+    "version": 1261824,
+    "vm_status": "Executed successfully"
+  }
+}
+```
